@@ -28,10 +28,10 @@
 <meta property="og:description" content="code{         color:#C82850 ;         background:#FAF0F5;     }     坑点1——来必力评论不显示 用了最新版的next，找了很多篇配置讲解都是说，注册了来必力之后，把“来必力安装代码”中data-uid的值，直接替换掉主题配置文件中设置livere_uid的值就好，但是弄了很久，也不知道是我的next问题还是怎么样，评论区">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://yoursite.com/2020/03/17/hexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE%E6%9D%A5%E5%BF%85%E5%8A%9B%E8%AF%84%E8%AE%BA%E5%9D%91%E7%82%B9/livere0.png">
-<meta property="og:image" content="http://yoursite.com/2020/03/17/hexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE%E6%9D%A5%E5%BF%85%E5%8A%9B%E8%AF%84%E8%AE%BA%E5%9D%91%E7%82%B9/result0.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/17/hexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE%E6%9D%A5%E5%BF%85%E5%8A%9B%E8%AF%84%E8%AE%BA%E5%9D%91%E7%82%B9/result0.jpg">
 <meta property="og:image" content="http://yoursite.com/2020/03/17/hexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE%E6%9D%A5%E5%BF%85%E5%8A%9B%E8%AF%84%E8%AE%BA%E5%9D%91%E7%82%B9/result.jpg">
 <meta property="article:published_time" content="2020-03-17T15:50:34.000Z">
-<meta property="article:modified_time" content="2020-03-17T18:11:52.348Z">
+<meta property="article:modified_time" content="2020-03-17T18:13:39.834Z">
 <meta property="article:author" content="js557">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://yoursite.com/2020/03/17/hexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE%E6%9D%A5%E5%BF%85%E5%8A%9B%E8%AF%84%E8%AE%BA%E5%9D%91%E7%82%B9/livere0.png">
@@ -184,7 +184,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-03-18 02:11:52" itemprop="dateModified" datetime="2020-03-18T02:11:52+08:00">2020-03-18</time>
+                <time title="Modified: 2020-03-18 02:13:39" itemprop="dateModified" datetime="2020-03-18T02:13:39+08:00">2020-03-18</time>
               </span>
 
           
@@ -225,8 +225,7 @@
 <a id="more"></a>
 <h3 id="换主题方法"><a href="#换主题方法" class="headerlink" title="换主题方法"></a>换主题方法</h3><p>在主题配置文件(themes/next/config.yml)中，搜索Schemes就会找到主题模块，切换成你想要的主题即可。</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Schemes</span></span><br><span class="line"><span class="comment">#scheme: Muse</span></span><br><span class="line"><span class="attr">scheme:</span> <span class="string">Mist</span></span><br><span class="line"><span class="comment">#scheme: Pisces</span></span><br><span class="line"><span class="comment">#scheme: Gemini</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="/2020/03/17/hexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE%E6%9D%A5%E5%BF%85%E5%8A%9B%E8%AF%84%E8%AE%BA%E5%9D%91%E7%82%B9/result0.png" alt="result.png"><br>不过，试了好多次之后又发现，有时候评论区也没有加载进来，个人觉得…可能是因为本身就加载慢。</p>
+<p><img src="/2020/03/17/hexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE%E6%9D%A5%E5%BF%85%E5%8A%9B%E8%AF%84%E8%AE%BA%E5%9D%91%E7%82%B9/result0.jpg" alt="result.png"><br>不过，试了好多次之后又发现，有时候评论区也没有加载进来，个人觉得…可能是因为本身就加载慢。</p>
 <h2 id="坑点2——文章导入本地图片不显示"><a href="#坑点2——文章导入本地图片不显示" class="headerlink" title="坑点2——文章导入本地图片不显示"></a>坑点2——文章导入本地图片不显示</h2><p>按网上常规步骤弄完，图片仍不显示！</p>
 <h3 id="博客文章导入图片步骤"><a href="#博客文章导入图片步骤" class="headerlink" title="博客文章导入图片步骤"></a>博客文章导入图片步骤</h3><pre><code>1.去站点配置文件_config.yml中：将&lt;code&gt;post_asset_folder: false&lt;/code&gt;改为&lt;code&gt;post_asset_folder: true&lt;/code&gt;
 2.站点下安装插件&lt;code&gt;&lt;font&gt;npm install https://github.com/CodeFalling/hexo-asset-image -- save&lt;font&gt;&lt;/code&gt;
