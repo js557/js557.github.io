@@ -1210,7 +1210,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #8e7325;
+  background: #1c5c03;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2007,6 +2007,14 @@ pre .javascript .function {
   color: #fc6423;
   border-bottom: none;
   border-bottom: 1px solid #fc6423;
+}
+::selection {
+  background: #f00;
+  color: #f7f7f7;
+}
+::-moz-selection {
+  background: #00c4b6;
+  color: #f7f7f7;
 }
 .category-all-page .category-all-title {
   text-align: center;
