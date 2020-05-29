@@ -40,19 +40,21 @@
     var CONFIG = {"hostname":"1mu58z.coding-pages.com","root":"/","scheme":"Mist","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="code{         color:#C82850 ;         background:#FAF0F5;     }     font{         color:blue;         font-weight:bold;     }   题目入口这道题有点巧妙~ 大致题意给定一个数组，每次给出l,r,value表示区间 [ l , r ] 的总和为value，但每次给出">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://1mu58z.coding-pages.com/2020/03/17/hello-world/index.html">
+<meta property="og:title" content="带权并查集_How Many Answers Are Wrong">
+<meta property="og:url" content="https://1mu58z.coding-pages.com/2020/05/29/%E5%B8%A6%E6%9D%83%E5%B9%B6%E6%9F%A5%E9%9B%86_HowManyAnswersAreWrong/index.html">
 <meta property="og:site_name" content="js557&#39;s blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="code{         color:#C82850 ;         background:#FAF0F5;     }     font{         color:blue;         font-weight:bold;     }   题目入口这道题有点巧妙~ 大致题意给定一个数组，每次给出l,r,value表示区间 [ l , r ] 的总和为value，但每次给出">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-03-17T02:33:37.042Z">
-<meta property="article:modified_time" content="2020-03-17T16:05:00.047Z">
+<meta property="og:image" content="https://1mu58z.coding-pages.com/2020/05/29/%E5%B8%A6%E6%9D%83%E5%B9%B6%E6%9F%A5%E9%9B%86_HowManyAnswersAreWrong/1.png">
+<meta property="article:published_time" content="2020-05-28T23:49:32.512Z">
+<meta property="article:modified_time" content="2020-05-29T00:40:29.975Z">
 <meta property="article:author" content="js557">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://1mu58z.coding-pages.com/2020/05/29/%E5%B8%A6%E6%9D%83%E5%B9%B6%E6%9F%A5%E9%9B%86_HowManyAnswersAreWrong/1.png">
 
-<link rel="canonical" href="https://1mu58z.coding-pages.com/2020/03/17/hello-world/">
+<link rel="canonical" href="https://1mu58z.coding-pages.com/2020/05/29/%E5%B8%A6%E6%9D%83%E5%B9%B6%E6%9F%A5%E9%9B%86_HowManyAnswersAreWrong/">
 
 
 <script id="page-configurations">
@@ -64,7 +66,7 @@
   };
 </script>
 
-  <title>Hello World | js557's blog</title>
+  <title>带权并查集_How Many Answers Are Wrong | js557's blog</title>
   
 
 
@@ -203,7 +205,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
-    <link itemprop="mainEntityOfPage" href="https://1mu58z.coding-pages.com/2020/03/17/hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://1mu58z.coding-pages.com/2020/05/29/%E5%B8%A6%E6%9D%83%E5%B9%B6%E6%9F%A5%E9%9B%86_HowManyAnswersAreWrong/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/tx.jpg">
@@ -216,7 +218,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hello World
+          带权并查集_How Many Answers Are Wrong
         </h1>
 
         <div class="post-meta">
@@ -225,16 +227,10 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2020-03-17 10:33:37" itemprop="dateCreated datePublished" datetime="2020-03-17T10:33:37+08:00">2020-03-17</time>
+              <time title="Created: 2020-05-29 07:49:32 / Modified: 08:40:29" itemprop="dateCreated datePublished" datetime="2020-05-29T07:49:32+08:00">2020-05-29</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-03-18 00:05:00" itemprop="dateModified" datetime="2020-03-18T00:05:00+08:00">2020-03-18</time>
-              </span>
 
           
             <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
@@ -254,21 +250,22 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+        <style>
+    code{
+        color:#C82850 ;
+        background:#FAF0F5;
+    }
+    font{
+        color:blue;
+        font-weight:bold;
+    }
+</style>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><a id="more"></a>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+<p><a href="http://acm.hdu.edu.cn/showproblem.php?pid=3038" target="_blank" rel="noopener">题目入口</a><br>这道题有点巧妙~</p>
+<h6 id="大致题意"><a href="#大致题意" class="headerlink" title="大致题意"></a>大致题意</h6><p>给定一个数组，每次给出l,r,value表示区间 [ l , r ] 的总和为value，但每次给出的value可能和前面的答案有冲突，求冲突次数。<br><b>举例：</b>好比如前面给出了[1,10]的和为100、[1,7]的和为60，那么自然就可以确定[8,10]的和为100-60=40，但题目术输出却给出[8,10]的和为80，那么就和前面的答案冲突了。</p>
+<p><code>这道题的突破点在于，</code><a id="more"></a>可以以sum[ i ]看成区间 [ 0 , i ] 的总和（或称为距离），则变成了只看一个变量i，则可考虑用并查集。可以发现，只有当上面的举例那样的情况，才可以确定发生了冲突。那么没有冲突时，我们就合并两个点（集合）。</p>
+<p><img src="/2020/05/29/%E5%B8%A6%E6%9D%83%E5%B9%B6%E6%9F%A5%E9%9B%86_HowManyAnswersAreWrong/1.png" alt="avatar"></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ll long long</span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxn = <span class="number">2e5</span> + <span class="number">10</span>;</span><br><span class="line"><span class="keyword">int</span> a[maxn];</span><br><span class="line"><span class="keyword">int</span> parent[maxn];</span><br><span class="line">ll sum[maxn] = &#123;<span class="number">0</span>&#125;;<span class="comment">//表示i到父节点的距离</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">find</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (parent[x] != x) &#123;</span><br><span class="line">        <span class="keyword">int</span> t = parent[x];</span><br><span class="line">        parent[x] = <span class="built_in">find</span>(parent[x]);<span class="comment">//路径压缩</span></span><br><span class="line">        sum[x] += sum[t]; </span><br><span class="line">            <span class="comment">/*  经过路径压缩后，x的父节点由t变为了为根节点，t的父节点也变为了根节点，所以要刷新sum[x]的值(=sum[x]+sum[t]),sum[x]原本表示x到旧父节点t的距离，但现在应是x到新的父节点（根节点root）的距离，则为"x到旧父节点t的距离+救父结点t到新父节点root的距离" */</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> parent[x];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    ios::sync_with_stdio(<span class="literal">false</span>);</span><br><span class="line">    <span class="keyword">int</span> n, m;</span><br><span class="line">    <span class="keyword">while</span>(<span class="built_in">cin</span> &gt;&gt; n &gt;&gt; m)&#123;</span><br><span class="line">        <span class="built_in">memset</span>(sum,<span class="number">0</span>,<span class="keyword">sizeof</span>(sum));</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n + <span class="number">5</span>; i++) &#123;</span><br><span class="line">            parent[i] = i;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> res = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= m; i++) &#123;</span><br><span class="line">            <span class="keyword">int</span> l, r, va;</span><br><span class="line">            <span class="built_in">cin</span> &gt;&gt; l &gt;&gt; r &gt;&gt; va;</span><br><span class="line">            r++;  <span class="comment">//区间：左闭右开，避免端点重复求和</span></span><br><span class="line">            <span class="keyword">int</span> fl = <span class="built_in">find</span>(l), fr = <span class="built_in">find</span>(r);</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span> (fl != fr) &#123;</span><br><span class="line">                parent[fl] = fr;</span><br><span class="line">                sum[fl] = sum[r] + va - sum[l];</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> (va != sum[l] - sum[r]) &#123;<span class="comment">//注意此处不是sum[r]-sum[l],画图可以看出</span></span><br><span class="line">                    res++;</span><br><span class="line">                 <span class="comment">//   printf("%d---%d\n",i,res);</span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; res &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
     </div>
 
     
@@ -297,7 +294,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link: </strong>
-    <a href="https://1mu58z.coding-pages.com/2020/03/17/hello-world/" title="Hello World">https://1mu58z.coding-pages.com/2020/03/17/hello-world/</a>
+    <a href="https://1mu58z.coding-pages.com/2020/05/29/%E5%B8%A6%E6%9D%83%E5%B9%B6%E6%9F%A5%E9%9B%86_HowManyAnswersAreWrong/" title="带权并查集_How Many Answers Are Wrong">https://1mu58z.coding-pages.com/2020/05/29/带权并查集_HowManyAnswersAreWrong/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
@@ -321,10 +318,13 @@
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/2020/03/17/hexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE%E6%9D%A5%E5%BF%85%E5%8A%9B%E8%AF%84%E8%AE%BA%E5%9D%91%E7%82%B9/" rel="next" title="hexo下建blog的坑点">
-      hexo下建blog的坑点 <i class="fa fa-chevron-right"></i>
+    <a href="/2020/05/29/cf#599(div2)C%20-%20Tile%20Painting/" rel="prev" title="cf#599(div2)C - Tile Painting">
+      <i class="fa fa-chevron-left"></i> cf#599(div2)C - Tile Painting
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/05/29/SegmentsPOJ3304_%E5%8F%89%E4%B9%98+%E7%9B%B4%E7%BA%BF%E4%B8%8E%E7%BA%BF%E6%AE%B5%E7%9B%B8%E4%BA%A4+%E6%80%9D%E7%BB%B4/" rel="next" title="Segments POJ 3304_叉乘+直线与线段相交+思维">
+      Segments POJ 3304_叉乘+直线与线段相交+思维 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -392,7 +392,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-6"><a class="nav-link" href="#大致题意"><span class="nav-number">1.</span> <span class="nav-text">大致题意</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 

@@ -40,19 +40,19 @@
     var CONFIG = {"hostname":"1mu58z.coding-pages.com","root":"/","scheme":"Mist","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="题目入口问：在平面中的两个矩形可以将平面分成多少个区域？分析：可以看成是对区域进行染色。先把点离散化，并且在离散化时，将值设为原本离散化值的2倍—&gt;为了使矩形留出空格成块否则，如（0，0）和（1，1）组成的矩形在整个图（假设边为5的正方形图）中显示会如下所示">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://1mu58z.coding-pages.com/2020/03/17/hello-world/index.html">
+<meta property="og:title" content="2019多校Calabash and Landlord_hdu6665（区域染色分块">
+<meta property="og:url" content="https://1mu58z.coding-pages.com/2020/05/29/2019%E5%A4%9A%E6%A0%A1Calabash%20and%20Landlord_hdu6665%EF%BC%88%E5%8C%BA%E5%9F%9F%E6%9F%93%E8%89%B2%E5%88%86%E5%9D%97/index.html">
 <meta property="og:site_name" content="js557&#39;s blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="题目入口问：在平面中的两个矩形可以将平面分成多少个区域？分析：可以看成是对区域进行染色。先把点离散化，并且在离散化时，将值设为原本离散化值的2倍—&gt;为了使矩形留出空格成块否则，如（0，0）和（1，1）组成的矩形在整个图（假设边为5的正方形图）中显示会如下所示">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-03-17T02:33:37.042Z">
-<meta property="article:modified_time" content="2020-03-17T16:05:00.047Z">
+<meta property="article:published_time" content="2020-05-28T23:40:00.136Z">
+<meta property="article:modified_time" content="2020-05-29T00:34:45.503Z">
 <meta property="article:author" content="js557">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://1mu58z.coding-pages.com/2020/03/17/hello-world/">
+<link rel="canonical" href="https://1mu58z.coding-pages.com/2020/05/29/2019%E5%A4%9A%E6%A0%A1Calabash%20and%20Landlord_hdu6665%EF%BC%88%E5%8C%BA%E5%9F%9F%E6%9F%93%E8%89%B2%E5%88%86%E5%9D%97/">
 
 
 <script id="page-configurations">
@@ -64,7 +64,7 @@
   };
 </script>
 
-  <title>Hello World | js557's blog</title>
+  <title>2019多校Calabash and Landlord_hdu6665（区域染色分块 | js557's blog</title>
   
 
 
@@ -203,7 +203,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
-    <link itemprop="mainEntityOfPage" href="https://1mu58z.coding-pages.com/2020/03/17/hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://1mu58z.coding-pages.com/2020/05/29/2019%E5%A4%9A%E6%A0%A1Calabash%20and%20Landlord_hdu6665%EF%BC%88%E5%8C%BA%E5%9F%9F%E6%9F%93%E8%89%B2%E5%88%86%E5%9D%97/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/tx.jpg">
@@ -216,7 +216,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hello World
+          2019多校Calabash and Landlord_hdu6665（区域染色分块
         </h1>
 
         <div class="post-meta">
@@ -225,16 +225,10 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2020-03-17 10:33:37" itemprop="dateCreated datePublished" datetime="2020-03-17T10:33:37+08:00">2020-03-17</time>
+              <time title="Created: 2020-05-29 07:40:00 / Modified: 08:34:45" itemprop="dateCreated datePublished" datetime="2020-05-29T07:40:00+08:00">2020-05-29</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-03-18 00:05:00" itemprop="dateModified" datetime="2020-03-18T00:05:00+08:00">2020-03-18</time>
-              </span>
 
           
             <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
@@ -254,21 +248,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><a id="more"></a>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+        <p><a href="http://acm.hdu.edu.cn/showproblem.php?pid=6665" target="_blank" rel="noopener">题目入口</a><br><b>问：在平面中的两个矩形可以将平面分成多少个区域？</b><br>分析：可以看成是对区域进行染色。<br>先把点离散化，并且在离散化时，将值设为原本离散化值的2倍—&gt;为了使矩形留出空格成块<br>否则，如（0，0）和（1，1）组成的矩形在整个图（假设边为5的正方形图）中显示会如下所示</p>
+<a id="more"></a>
+<p>-1 -1 0 0 0<br>-1 -1 0 0 0<br> 0  0 0 0 0<br> 0  0 0 0 0<br> 0  0 0 0 0 （-1表示矩形的边，0表示空白处）<br>而因为矩形内也存在区域 所以正确的图应该如下<br>-1 -1 -1 0 0<br>-1  0 -1 0 0<br>-1 -1 -1 0 0<br> 0  0  0 0 0<br> 0  0  0 0 0<br>所以离散化时应该将值设为原本的2倍~<br>然后跑一遍整幅图（此处大小设为了10*10），每跑完一次dfs相当于跑完一个区域，所以跑了多少遍dfs就是有多少个区域–&gt;即答案。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span>  ll long long</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> N 10</span></span><br><span class="line"><span class="keyword">int</span> a[N][N];</span><br><span class="line"><span class="keyword">int</span> x[<span class="number">5</span>],y[<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">init</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> m[<span class="number">5</span>],n[<span class="number">5</span>];</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;<span class="number">4</span>; i++) &#123;</span><br><span class="line">		m[i]=x[i];</span><br><span class="line">		n[i]=y[i];</span><br><span class="line">	&#125;</span><br><span class="line">	sort(m,m+<span class="number">4</span>);</span><br><span class="line">	sort(n,n+<span class="number">4</span>);</span><br><span class="line">	<span class="keyword">int</span> len1=unique(m,m+<span class="number">4</span>)-m;</span><br><span class="line">	<span class="keyword">int</span> len2=unique(n,n+<span class="number">4</span>)-m;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;<span class="number">4</span>; i++) &#123;</span><br><span class="line">		x[i]=<span class="number">2</span>*(lower_bound(m,m+<span class="number">4</span>,x[i])-m+<span class="number">1</span>);<span class="comment">//为了正方形内空格  可打表观察 </span></span><br><span class="line">		y[i]=<span class="number">2</span>*(lower_bound(n,n+<span class="number">4</span>,y[i])-n+<span class="number">1</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">int</span> zb[<span class="number">4</span>][<span class="number">2</span>]= &#123;<span class="number">0</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">0</span>,<span class="number">-1</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">-1</span>&#125;;</span><br><span class="line"><span class="keyword">int</span> ans=<span class="number">0</span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> nx,ny;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;<span class="number">4</span>; i++) &#123;</span><br><span class="line">		nx=x+zb[i][<span class="number">0</span>];</span><br><span class="line">		ny=y+zb[i][<span class="number">1</span>];</span><br><span class="line">		<span class="keyword">if</span>(nx&gt;=<span class="number">0</span>&amp;&amp;nx&lt;N&amp;&amp;y&gt;=<span class="number">0</span>&amp;&amp;y&lt;N&amp;&amp;a[nx][ny]==<span class="number">0</span>) &#123;</span><br><span class="line">			a[nx][ny]=ans;</span><br><span class="line">			dfs(nx,ny);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> t;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;t);</span><br><span class="line">	<span class="keyword">while</span>(t--) &#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;<span class="number">4</span>; i++) &#123;</span><br><span class="line">			<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;x[i],&amp;y[i]);</span><br><span class="line">		&#125;</span><br><span class="line">		init();<span class="comment">//离散化</span></span><br><span class="line">		<span class="built_in">memset</span>(a,<span class="number">0</span>,<span class="keyword">sizeof</span>(a));</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>; j&lt;<span class="number">2</span>; j++) &#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> i=x[<span class="number">2</span>*j]; i&lt;=x[<span class="number">2</span>*j+<span class="number">1</span>]; i++) &#123;</span><br><span class="line">				a[i][y[<span class="number">2</span>*j]]=a[i][y[<span class="number">2</span>*j+<span class="number">1</span>]]=<span class="number">-1</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> i=y[<span class="number">2</span>*j]; i&lt;=y[<span class="number">2</span>*j+<span class="number">1</span>]; i++) &#123;</span><br><span class="line">				a[x[<span class="number">2</span>*j]][i]=a[x[<span class="number">2</span>*j+<span class="number">1</span>]][i]=<span class="number">-1</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line"> </span><br><span class="line">		ans=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;N; i++) &#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>; j&lt;N; j++) &#123;</span><br><span class="line">				<span class="keyword">if</span>(a[i][j]==<span class="number">0</span>) &#123;</span><br><span class="line">					ans++;</span><br><span class="line">					dfs(i,j);</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line"> </span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,ans);</span><br><span class="line"> </span><br><span class="line">	&#125;</span><br><span class="line"> </span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
     </div>
 
     
@@ -297,7 +280,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link: </strong>
-    <a href="https://1mu58z.coding-pages.com/2020/03/17/hello-world/" title="Hello World">https://1mu58z.coding-pages.com/2020/03/17/hello-world/</a>
+    <a href="https://1mu58z.coding-pages.com/2020/05/29/2019%E5%A4%9A%E6%A0%A1Calabash%20and%20Landlord_hdu6665%EF%BC%88%E5%8C%BA%E5%9F%9F%E6%9F%93%E8%89%B2%E5%88%86%E5%9D%97/" title="2019多校Calabash and Landlord_hdu6665（区域染色分块">https://1mu58z.coding-pages.com/2020/05/29/2019多校Calabash and Landlord_hdu6665（区域染色分块/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
@@ -321,10 +304,13 @@
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/2020/03/17/hexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE%E6%9D%A5%E5%BF%85%E5%8A%9B%E8%AF%84%E8%AE%BA%E5%9D%91%E7%82%B9/" rel="next" title="hexo下建blog的坑点">
-      hexo下建blog的坑点 <i class="fa fa-chevron-right"></i>
+    <a href="/2020/05/29/Roundgod%20and%20Milk%20Tea_hdu6667(%E8%B4%AA%E5%BF%83)/" rel="prev" title="Roundgod and Milk Tea_hdu6667(贪心)">
+      <i class="fa fa-chevron-left"></i> Roundgod and Milk Tea_hdu6667(贪心)
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/05/29/cf#599(div2)C%20-%20Tile%20Painting/" rel="next" title="cf#599(div2)C - Tile Painting">
+      cf#599(div2)C - Tile Painting <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -392,7 +378,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

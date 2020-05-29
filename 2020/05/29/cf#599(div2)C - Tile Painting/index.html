@@ -40,17 +40,19 @@
     var CONFIG = {"hostname":"1mu58z.coding-pages.com","root":"/","scheme":"Mist","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="tag">
-<meta property="og:url" content="https://1mu58z.coding-pages.com/tags/index.html">
+  <meta name="description" content="题目入口这个题目有点意思~题目要求| i-j |&gt;1 &amp;&amp; n%| i-j |&#x3D;&#x3D;0  所以|i-j|是n的因数。结论：  若n本身为质数，则一共有n种颜色。 只有一个质因子（&#x3D;m），则m种颜色。 若n质因子个数&gt;&#x3D;2，则所有格子都会有相同颜色，即结果为1。情况1、2很容易得出，画一下图很容易看出来。这里讨论第3种情况">
+<meta property="og:type" content="article">
+<meta property="og:title" content="cf#599(div2)C - Tile Painting">
+<meta property="og:url" content="https://1mu58z.coding-pages.com/2020/05/29/cf#599(div2)C%20-%20Tile%20Painting/index.html">
 <meta property="og:site_name" content="js557&#39;s blog">
+<meta property="og:description" content="题目入口这个题目有点意思~题目要求| i-j |&gt;1 &amp;&amp; n%| i-j |&#x3D;&#x3D;0  所以|i-j|是n的因数。结论：  若n本身为质数，则一共有n种颜色。 只有一个质因子（&#x3D;m），则m种颜色。 若n质因子个数&gt;&#x3D;2，则所有格子都会有相同颜色，即结果为1。情况1、2很容易得出，画一下图很容易看出来。这里讨论第3种情况">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-03-18T09:16:46.000Z">
-<meta property="article:modified_time" content="2020-03-18T09:17:18.502Z">
+<meta property="article:published_time" content="2020-05-28T23:45:31.678Z">
+<meta property="article:modified_time" content="2020-05-29T00:38:19.894Z">
 <meta property="article:author" content="js557">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://1mu58z.coding-pages.com/tags/">
+<link rel="canonical" href="https://1mu58z.coding-pages.com/2020/05/29/cf#599(div2)C%20-%20Tile%20Painting/">
 
 
 <script id="page-configurations">
@@ -58,12 +60,11 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false
+    isPost : true
   };
 </script>
 
-  <title>tag | js557's blog
-  </title>
+  <title>cf#599(div2)C - Tile Painting | js557's blog</title>
   
 
 
@@ -193,44 +194,139 @@
       <div class="main-inner">
         <div class="content-wrap">
           
-  
-  
 
           <div class="content">
             
 
   <div class="posts-expand">
-    
-    
-    
-    <div class="post-block" lang="en">
-      <header class="post-header">
-
-<h1 class="post-title" itemprop="name headline">tag
-</h1>
-
-<div class="post-meta">
+      
   
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
+    <link itemprop="mainEntityOfPage" href="https://1mu58z.coding-pages.com/2020/05/29/cf#599(div2)C%20-%20Tile%20Painting/">
 
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/tx.jpg">
+      <meta itemprop="name" content="js557">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="js557's blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          cf#599(div2)C - Tile Painting
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2020-05-29 07:45:31 / Modified: 08:38:19" itemprop="dateCreated datePublished" datetime="2020-05-29T07:45:31+08:00">2020-05-29</time>
+            </span>
+
+          
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><a href="http://codeforces.com/contest/1243/problem/C" target="_blank" rel="noopener">题目入口</a><br>这个题目有点意思~<br>题目要求| i-j |&gt;1 &amp;&amp; n%| i-j |==0  所以|i-j|是n的因数。<br><b>结论：</b></p>
+<ol>
+<li>若n本身为质数，则一共有n种颜色。</li>
+<li>只有一个质因子（=m），则m种颜色。</li>
+<li>若n质因子个数&gt;=2，则所有格子都会有相同颜色，即结果为1。<br>情况1、2很容易得出，画一下图很容易看出来。这里讨论第3种情况<a id="more"></a><br>其实推断一下就很容易发现，最多的颜色数&lt;=n的最小质因子。<br>好比如15，因数有1,3,5,15。<br>则每隔5个就有相同的颜色，即：<br>格子1 6 11，2 7 12、3 8 13、4 9 14、5 10 15分别相同颜色，可以发现格子第1-5号可以直接表示了这5种颜色（因为后面的颜色分别和1-5中的一个颜色相同。）</li>
+</ol>
+<p>又每隔3隔就有相同颜色，同理，格子1-3号表示了这3种颜色。</p>
+<p>所以，<b>初步推断</b>，n个格子，最多颜色数&lt;=最小质因子。</p>
+<p>为什么不是直接=最小质因子呢？<br><u>令：m=“n的最小质因子”。</u><br>用n=15这个例子，从1<del>15分为每连续3个一组，初步推断！！可知每组中的3个颜色两两不相同。接着往下一个质因子去推，以1为起点，每+5一次其实就相当于在第一组的1</del>3号中移动成对应的位置（其实相当于循环），因为若+3则移动到4，相当于1号位置（因为1和4的颜色相同），而+5即多移动了2个位置，所以第一次+5对应到了3号位置，第2次+5可对应到2号位置，第3次+5可对应到1号位置…可看出其实每一次+5，相当于在一个环形圈里移动位置，而只需移动m-1次即可遍历完所有的格子，得出结论——这些格子颜色都相同。</p>
+<p>而格子一共只有n个，为什么就一定可以移动m-1次呢？<br>∵ 比如n=15=3<em>5,对于这两个质因子，假设为x1,x2  则x1</em>x2=n  若x1=3，x2=5，所以一共有x2个x1，而对于从1号位置开始，每次+5 得出的格子位置为1+x2<em>t (t=1,2,3…)<br>∴1+5</em>t所以max(t)=x1-1，刚好可以遍历完所有格子。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ll long long</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function">ll <span class="title">solve</span><span class="params">(ll n)</span></span>&#123;</span><br><span class="line">	ll cnt=<span class="number">0</span>;</span><br><span class="line">	ll nn=n;</span><br><span class="line">	<span class="keyword">for</span>(ll i=<span class="number">2</span>;i*i&lt;=n;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(n%i==<span class="number">0</span>)&#123;</span><br><span class="line">			cnt++;<span class="comment">//记录质因子个数 </span></span><br><span class="line">			<span class="keyword">while</span>(n%i==<span class="number">0</span>)&#123;</span><br><span class="line">				n/=i;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span>(n!=<span class="number">1</span>)	</span><br><span class="line">				<span class="keyword">return</span> <span class="number">1</span>;<span class="comment">//说明&gt;=2个质因子 </span></span><br><span class="line">			<span class="keyword">if</span>(n==<span class="number">1</span>)<span class="comment">//说明只有一个质因子 </span></span><br><span class="line">				<span class="keyword">return</span> i; <span class="comment">//返回最小质因子 </span></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> nn;<span class="comment">//本身是质数 </span></span><br><span class="line">	</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	ll n;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%I64d"</span>,&amp;n);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%I64d"</span>,solve(n));</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    Donate
+  </button>
+  <div id="qr" style="display: none;">
+      <div style="display: inline-block;">
+        <img src="/images/wxPay.jpg" alt="js557 weixin">
+        <p>weixin</p>
+      </div>
+
+  </div>
 </div>
 
-</header>
+        
 
-      
-      
-      
-      <div class="post-body">
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:  </strong>js557
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link: </strong>
+    <a href="https://1mu58z.coding-pages.com/2020/05/29/cf#599(div2)C%20-%20Tile%20Painting/" title="cf#599(div2)C - Tile Painting">https://1mu58z.coding-pages.com/2020/05/29/cf#599(div2)C - Tile Painting/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+      <div>
+          
+          <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
           
       </div>
-      
-      
-      
-    </div>
-    
+      <footer class="post-footer">
 
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/05/29/2019%E5%A4%9A%E6%A0%A1Calabash%20and%20Landlord_hdu6665%EF%BC%88%E5%8C%BA%E5%9F%9F%E6%9F%93%E8%89%B2%E5%88%86%E5%9D%97/" rel="prev" title="2019多校Calabash and Landlord_hdu6665（区域染色分块">
+      <i class="fa fa-chevron-left"></i> 2019多校Calabash and Landlord_hdu6665（区域染色分块
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/05/29/%E5%B8%A6%E6%9D%83%E5%B9%B6%E6%9F%A5%E9%9B%86_HowManyAnswersAreWrong/" rel="next" title="带权并查集_How Many Answers Are Wrong">
+      带权并查集_How Many Answers Are Wrong <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
     
-    
-    
+  </article>
+  
+  
+  
+
   </div>
 
 
